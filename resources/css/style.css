@@ -157,7 +157,7 @@ header{
 }
 
 .btn-full:hover, .btn-full:active{
-  border: 1px solid white;
+  border: 1px solid #e67e22;
   background-color: white;
   color: #e67e22;
 }
@@ -414,4 +414,32 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* --------------------------- */
+/* Sign Up and Plans */
+/* --------------------------- */
+.plans-header{
+  text-align: center;
+}
+
+.plans-header:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btn-light:link, .btn-light:visited{
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn-light:hover, .btn-light:active{
+  border: 1px solid #e67e22;
+  background-color: #e67e22;
+  color: white;
 }
