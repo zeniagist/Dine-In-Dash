@@ -157,7 +157,7 @@ header{
 }
 
 .btn-full:hover, .btn-full:active{
-  border: 1px solid white;
+  border: 1px solid #e67e22;
   background-color: white;
   color: #e67e22;
 }
@@ -414,4 +414,94 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* --------------------------- */
+/* Sign Up and Plans */
+/* --------------------------- */
+.section-plans{
+  background-color: #f4f4f4;  
+}
+
+.plans-header{
+  text-align: center;
+}
+
+.plans-header:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btn-light:link, .btn-light:visited{
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn-light:hover, .btn-light:active{
+  border: 1px solid #e67e22;
+  background-color: #e67e22;
+  color: white;
+}
+
+.plan-box{
+  background-color: white;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.plan-box div{
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div:first-child{
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+  text-align: center;
+  border: none;
+}
+
+.plan-price{
+  font-size: 300%;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.plan-price span{
+  font-size: 30%;
+}
+
+.plan-price-meal{
+  font-size: 80%;
+}
+
+.plan-box ul{
+  list-style: none;  
+}
+
+.plan-box ul li{
+  padding: 5px 0;
+}
+
+.icon-red{
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  color: red;
+  font-size: 120%;
+  margin-right: 5px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
 }
