@@ -18,10 +18,7 @@ html{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  text-rendering: optimizeLegibility;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
-  background-size: cover;
-  background-position: center;
+  text-rendering: optimizeLegibility;  
 }
 
 .row{
@@ -30,13 +27,25 @@ html{
 }
 
 /* --------------------------- */
+/* Intro */
+/* --------------------------- */
+.logo, .hero-text-box{
+  position: absolute;
+  left: 10%;
+}
+
+.backgroundImage{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* --------------------------- */
 /* Navigation Bar */
 /* --------------------------- */
 .logo{
   height: 100px;
   width: auto;
-  position: absolute;
-  left: 10%;
   margin-top: 20px;
 }
 
@@ -73,10 +82,9 @@ header{
 }
 
 .hero-text-box{
-  position: absolute;
+  
   width: 100%;
-  top: 40%;
-  left: 10%;
+  top: 40%;  
   /* text-align: center; */
   /* transform: translate(-50%, -25%); */
 }
@@ -91,9 +99,7 @@ header{
   letter-spacing: 1px;
   word-spacing: 4px;
 }
-/* --------------------------- */
-/* Header Buttons */
-/* --------------------------- */
+
 .btn:link, .btn:visited{
   display: inline-block;
   padding: 10px 30px;
@@ -115,17 +121,14 @@ header{
   color: #e67e22;
 }
 
-
-/* .btn:hover, btn:active{
-  background-color: #cf6d17;
-} */
-
 .btn-full:hover, .btn-full:active{
-  border: 1px solid #cf6d17;
-  background-color: #cf6d17;
+  border: 1px solid white;
+  background-color: white;
+  color: #e67e22;
 }
 
 .btn-ghost:hover, .btn-ghost:active{
   border: 1px solid white;
   color: white;
 }
+
