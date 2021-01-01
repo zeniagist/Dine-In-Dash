@@ -38,6 +38,21 @@ h1, h2{
   padding: 1%;
 }
 
+a:link, a:active{
+  color: #e67e22;
+  padding-bottom: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s color 0.2s;
+}
+
+a:hover, a:visited{
+  color: #555;
+  padding-bottom: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
 /* Clear Float after elements */
 .clearfix{
   zoom: 1;
@@ -50,6 +65,7 @@ h1, h2{
   height: 0;
   visibility: hidden;
 }
+
 /* --------------------------- */
 /* Intro */
 /* --------------------------- */
@@ -291,6 +307,10 @@ steps-box:first-child{
   margin-right: 25px;
 }
 
+.btn-app:link, .btn-app:visited{
+  border: 0;
+}
+
 .btn-app img{
   height: 50px;
   width: auto;
@@ -331,12 +351,13 @@ steps-box:first-child{
 
 .icon-small{
   display: inline-block;
-  width: 25px;
+  width: 20px;
   text-align: center;
   color: #e67e22;
   font-size: 120%;
-  margin-right: 10px;
+  margin-right: 5px;
   line-height: 120%;
   vertical-align: middle;
   margin-top: -5px;
 }
+
