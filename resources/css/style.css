@@ -26,6 +26,18 @@ html{
   margin: 0 auto;
 }
 
+h1, h2, h3{
+  font-weight: 300;
+  text-transform: uppercase;  
+}
+
+section{
+  padding: 80px 0;
+}
+
+.box{
+  padding: 1%;
+}
 /* --------------------------- */
 /* Intro */
 /* --------------------------- */
@@ -81,23 +93,18 @@ header{
   height: 100vh;
 }
 
-.hero-text-box{
-  
+.hero-text-box{  
   width: 100%;
   top: 40%;  
-  /* text-align: center; */
-  /* transform: translate(-50%, -25%); */
 }
 
-.hero-text-box h1{
+.intro-header{
   margin-top: 0;
   margin-bottom: 20px;
   color: white;
-  font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 240%;  
   word-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 .btn:link, .btn:visited{
@@ -132,3 +139,46 @@ header{
   color: white;
 }
 
+/* --------------------------- */
+/* Features */
+/* --------------------------- */
+.features-header{
+  font-size: 180%;  
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.features-header:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.long-copy{
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.icon-big{
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.features-detail{
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.features-paragraph{
+  font-size: 90%;
+  line-height: 145%;
+}
