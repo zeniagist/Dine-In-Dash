@@ -361,3 +361,19 @@ steps-box:first-child{
   margin-top: -5px;
 }
 
+/* --------------------------- */
+/* Customer Testimonials */
+/* --------------------------- */
+.testimonials-header{
+  text-align: center;
+}
+
+.testimonials-header:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
