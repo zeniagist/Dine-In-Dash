@@ -27,6 +27,15 @@ section{
   padding: 80px 0;
 }
 
+h1, h2, h3{
+  font-weight: 300;
+  text-transform: uppercase;  
+}
+
+h1, h2{
+  letter-spacing: 1px;
+}
+
 .box{
   padding: 1%;
 }
@@ -94,11 +103,8 @@ header{
   margin-top: 0;
   margin-bottom: 20px;
   color: white;
-  font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;  
+  font-size: 240%; 
   word-spacing: 4px;
-  letter-spacing: 1px;
 }
 
 .btn:link, .btn:visited{
@@ -140,10 +146,7 @@ header{
   font-size: 180%;  
   word-spacing: 2px;
   text-align: center;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
+  margin-bottom: 30px;  
 }
 
 .features-header:after{
@@ -156,10 +159,11 @@ header{
   margin-top: 30px;
 }
 
-.long-copy{
+.section-features .long-copy{
   line-height: 145%;
   width: 70%;
   margin-left: 15%;
+  margin-bottom: 30px;
 }
 
 .icon-big{
@@ -172,8 +176,6 @@ header{
 .features-detail{
   font-size: 110%;
   margin-bottom: 15px;
-  font-weight: 300;
-  text-transform: uppercase;
 }
 
 .features-paragraph{
@@ -184,6 +186,9 @@ header{
 /* --------------------------- */
 /* Favorite Meals */
 /* --------------------------- */
+.section-meals{
+  padding: 0;
+}
 .meals-showcase{
   list-style: none;
   width: 100%;
@@ -193,13 +198,47 @@ header{
   display: block;
   float: left;
   width: 25%;
+  
 }
 
 .meal-photo{
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
 .meal-photo img{
+  opacity: 0.7;
   width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s opacity 0.5s;
+}
+
+.meal-photo img:hover{
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* --------------------------- */
+/* How It Works */
+/* --------------------------- */
+.section-steps{
+  background-color: black;
+  color: white;
+}
+
+.section-steps-header{
+  text-align: center;
+}
+
+.section-steps-header:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
