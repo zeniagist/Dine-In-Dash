@@ -1,7 +1,7 @@
 /* Orange Color #e67e22 */
 
 /* --------------------------- */
-/* All Elements */
+/* Body */
 /* --------------------------- */
 * {
   margin: 0;
@@ -9,9 +9,6 @@
   box-sizing: border-box;
 }
 
-/* --------------------------- */
-/* Body */
-/* --------------------------- */
 html{  
   background-color: #fff;
   color: #555;
@@ -24,11 +21,6 @@ html{
 .row{
   max-width: 1140px;
   margin: 0 auto;
-}
-
-h1, h2, h3{
-  font-weight: 300;
-  text-transform: uppercase;  
 }
 
 section{
@@ -47,7 +39,7 @@ section{
 }
 
 .backgroundImage{
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/resources/img/hero.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -102,7 +94,9 @@ header{
   margin-top: 0;
   margin-bottom: 20px;
   color: white;
-  font-size: 240%;  
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;  
   word-spacing: 4px;
   letter-spacing: 1px;
 }
@@ -146,6 +140,8 @@ header{
   font-size: 180%;  
   word-spacing: 2px;
   text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
@@ -176,9 +172,34 @@ header{
 .features-detail{
   font-size: 110%;
   margin-bottom: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .features-paragraph{
   font-size: 90%;
   line-height: 145%;
+}
+
+/* --------------------------- */
+/* Favorite Meals */
+/* --------------------------- */
+.meals-showcase{
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li{
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo{
+  width: 100%;
+  margin: 0;
+}
+
+.meal-photo img{
+  width: 100%;
 }
