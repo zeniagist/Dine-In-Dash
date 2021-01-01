@@ -1,7 +1,5 @@
-/* Orange Color #e67e22 */
-
 /* --------------------------- */
-/* All Elements */
+/* Body */
 /* --------------------------- */
 * {
   margin: 0;
@@ -9,9 +7,6 @@
   box-sizing: border-box;
 }
 
-/* --------------------------- */
-/* Body */
-/* --------------------------- */
 html{  
   background-color: #fff;
   color: #555;
@@ -26,17 +21,34 @@ html{
   margin: 0 auto;
 }
 
+section{
+  padding: 80px 0;
+}
+
 h1, h2, h3{
   font-weight: 300;
   text-transform: uppercase;  
 }
 
-section{
-  padding: 80px 0;
+h1, h2{
+  letter-spacing: 1px;
 }
 
 .box{
   padding: 1%;
+}
+
+/* Clear Float after elements */
+.clearfix{
+  zoom: 1;
+}
+
+.clearfix{
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 /* --------------------------- */
 /* Intro */
@@ -47,7 +59,7 @@ section{
 }
 
 .backgroundImage{
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/resources/img/hero.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -102,9 +114,8 @@ header{
   margin-top: 0;
   margin-bottom: 20px;
   color: white;
-  font-size: 240%;  
+  font-size: 240%; 
   word-spacing: 4px;
-  letter-spacing: 1px;
 }
 
 .btn:link, .btn:visited{
@@ -146,8 +157,7 @@ header{
   font-size: 180%;  
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
+  margin-bottom: 30px;  
 }
 
 .features-header:after{
@@ -160,10 +170,11 @@ header{
   margin-top: 30px;
 }
 
-.long-copy{
+.section-features .long-copy{
   line-height: 145%;
   width: 70%;
   margin-left: 15%;
+  margin-bottom: 30px;
 }
 
 .icon-big{
@@ -181,4 +192,107 @@ header{
 .features-paragraph{
   font-size: 90%;
   line-height: 145%;
+}
+
+/* --------------------------- */
+/* Favorite Meals */
+/* --------------------------- */
+.section-meals{
+  padding: 0;
+}
+.meals-showcase{
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li{
+  display: block;
+  float: left;
+  width: 25%;
+  
+}
+
+.meal-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.meal-photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s opacity 0.5s;
+}
+
+.meal-photo img:hover{
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* --------------------------- */
+/* How It Works */
+/* --------------------------- */
+.section-steps{
+  background-color: black;
+  color: white;
+}
+
+.section-steps-header{
+  text-align: center;
+}
+
+.section-steps-header:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+steps-box:first-child{
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+ steps-box:last-child{
+  padding-left: 3%;
+  margin-top: 70px;
+} 
+
+.app-screen{
+  width: 60%;
+}
+
+.works-step{
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+  margin-bottom: 80px;
+}
+
+.works-step div{
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
