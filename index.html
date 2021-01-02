@@ -181,6 +181,7 @@
       <div class="row">
           <h1 class="section-cities-header">We're currently in these cities</h1>
         </div>
+      <!-- Lisbon -->
       <div class="row">
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
@@ -198,6 +199,7 @@
             <a href="#" class="city-feature-link">@dineindash_lisbon</a>
           </div>
         </div>
+        <!-- San Francisco -->
         <div class="col span-1-of-4 box">
           <img src="resources/img/san-francisco.jpg" alt="San Francisco">
           <h3 class="cities-detail">San Francisco</h3>
@@ -214,6 +216,7 @@
             <a href="#" class="city-feature-link">@dineindash_sf</a>
           </div>
         </div>
+        <!-- Berlin -->
         <div class="col span-1-of-4 box">
           <img src="resources/img/berlin.jpg" alt="Berlin">
           <h3 class="cities-detail">Berlin</h3>
@@ -230,6 +233,7 @@
             <a href="#" class="city-feature-link">@dineindash_berlin</a>
           </div>
         </div>
+        <!-- London -->
         <div class="col span-1-of-4 box">
           <img src="resources/img/london.jpg" alt="London">
           <h3 class="cities-detail">London</h3>
@@ -282,6 +286,7 @@
         <h1 class="plans-header">Start eating healthy today</h1>
       </div>
       <div class="row">
+        <!-- Premium -->
         <div class="col span-1-of-3">
           <div class="plan-box">
             <div>
@@ -302,6 +307,7 @@
             </div>
           </div>
         </div>
+        <!-- Pro -->
         <div class="col span-1-of-3">
           <div class="plan-box">
             <div>
@@ -322,6 +328,7 @@
             </div>
           </div>
         </div>
+        <!-- Starter -->
         <div class="col span-1-of-3">
           <div class="plan-box">
             <div>
@@ -345,36 +352,82 @@
       </div>
     </section>
 
+    <!-- Contact Form -->
+    <section class="section-form">
+      <div class="row">
+        <h1 class="form-header">We're happy to hear from you</h1>
+      </div>
+      <div class="row">
+        <form action="#" method="post" class="contact-form">
+          <!-- Name -->
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="name">Name</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>            
+          </div>
+          <!-- Email -->
+          <div class="row">
+            <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+            </div>
+            <!-- How did you find us -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                  <label for="findus">How did you find us?</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <select name="findus" id="findus">
+                    <option value="friends" selected>Friends</option>
+                    <option value="search">Search Engine</option>
+                    <option value="ad">Advertisement</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Newsletter -->
+              <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="news">Newsletter</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                    <input type="checkbox" name="news" id="news" checked> Yes please!
+                  </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="row">
+                  <div class="col span-1-of-3">
+                      <label for="message">Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                      <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                      <input type="submit" value="Send it!">
+                    </div>
+                  </div>
+
+        </form>
+      </div>
+    </section>
+
   </body>
 </html>
 
 
 <!-- 
-  Section 6: Sign up and pricing plans
-
-Plan 2: Pro
-149$ per month
-That’s only 14.90$ per meal
-1 meal 10 days/month
-Order 24/7
-Access to newest creations
-Free delivery
-
-
-Plan 3: Starter
-19$ per meal
-1 meal
-Order from 8 am to 12 pm
-Free delivery
-Section 7: Contact form
-Title: We're happy to hear from you
-
-Fields to include:
-Name
-Email
-How did you find us?
-Newsletter
-Drop us a line
 
 Section 8: Footer
 Title: None
