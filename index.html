@@ -12,16 +12,16 @@
     <!-- CSS -->
     <link href="resources/css/queries.css" rel="stylesheet" type="text/css">
      <!-- CSS -->
-    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css">    
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script> 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <!-- Animation -->
-    <link href="vendors/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="vendors/css/animate.css" rel="stylesheet" type="text/css">   
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
 
     <title>Dine-In-Dash | Healthy Does Not Mean Boring</title>
   </head>
@@ -31,27 +31,34 @@
       Intro
     ------------------->
     <div class="backgroundImage">
-      <!------------------
-        Navigation Bar
-      ------------------->
-      <nav>
-        <div class="row">
-          <img src="resources/img/logo-white.png" alt="Dine-In-Dash Logo" class="logo">
-          <a href="#home"><img src="resources/img/logo.png" alt="Dine-In-Dash Logo" class="logo-black"></a>
-          <ul class="main-nav">
-            <li><a href="#features">Food delivery</a></li>
-            <li><a href="#works">How it works</a></li>
-            <li><a href="#cities">Our cities</a></li>
-            <li><a href="#plans">Sign up</a></li>
-          </ul>
-          <br>
-        </div>
-      </nav>
 
       <!------------------
         Header
       ------------------->
       <header id="home">
+        <nav>
+          <div class="row">
+            <img src="resources/img/logo-white.png" alt="Dine-In-Dash Logo" class="logo">
+            <a href="#home"><img src="resources/img/logo.png" alt="Dine-In-Dash Logo" class="logo-black"></a>
+            <ul class="main-nav">
+              <li><a href="#features">Food delivery</a></li>
+              <li><a href="#works">How it works</a></li>
+              <li><a href="#cities">Our cities</a></li>
+              <li><a href="#plans">Sign up</a></li>
+            </ul>
+            <div class="dropdown">
+              <a class="mobile-nav-icon dropbtn"><ion-icon name="menu-outline"></ion-icon></a>
+              <div id="myDropdown" class="dropdown-content">
+                <li><a href="#features">Food delivery</a></li>
+                <li><a href="#works">How it works</a></li>
+                <li><a href="#cities">Our cities</a></li>
+                <li><a href="#plans">Sign up</a></li>
+              </div>
+            </div>
+            <!-- <a class="mobile-nav-icon dropbtn"><ion-icon name="menu-outline"></ion-icon></a> -->
+            <br>
+          </div>
+        </nav>
         <div class="hero-text-box">
           <h1 class="intro-header">Goodbye junk food.<br />Hello healthy meals.</h1>
           <a href="#" class="btn btn-full js--scroll-to-plans">I’m hungry</a>
@@ -66,7 +73,7 @@
     <section class="section-features js--section-features" id="features">
       <div>       
         <!-- Features Header -->
-        <h1 class="features-header">Get food fast &mdash; not fast food.</h1>
+        <h2 class="features-header">Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">
           Hello, we’re Dine-In-Dash, your new premium food delivery service.<br>
           You’re always busy and have no time for cooking, so let us take care of that. We’re really good at it, we promise!
@@ -76,28 +83,28 @@
       <div class="row js--wp-1">
         <div class="col span-1-of-4 box">  
           <ion-icon name="infinite-outline" class="icon-big"></ion-icon>       
-          <h2 class="features-detail">Up to 365 days/year</h2>
+          <h3 class="features-detail">Up to 365 days/year</h3>
           <p class="features-paragraph">
             Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
           </p>
         </div>
         <div class="col span-1-of-4 box">
           <ion-icon name="stopwatch-outline" class="icon-big"></ion-icon>
-          <h2 class="features-detail">Ready in 20 minutes</h2>
+          <h3 class="features-detail">Ready in 20 minutes</h3>
           <p class="features-paragraph">
             You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
           </p>
         </div>
         <div class="col span-1-of-4 box">
           <ion-icon name="nutrition-outline" class="icon-big"></ion-icon>
-          <h2 class="features-detail">100% organic</h2>
+          <h3 class="features-detail">100% organic</h3>
           <p class="features-paragraph">
             All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
           </p class="features-paragraph">
         </div>       
         <div class="col span-1-of-4 box">
           <ion-icon name="cart-outline" class="icon-big"></ion-icon>
-          <h2 class="features-detail">Order anything</h2>
+          <h3 class="features-detail">Order anything</h3>
           <p>
             We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
           </p>

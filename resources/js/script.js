@@ -4,6 +4,9 @@ $(document).ready(function(){
   $(".js--section-features").waypoint(function(direction){
     if(direction == "down"){
       $("nav").addClass("sticky");
+      $(".main-nav").show();
+      $(".mobile-nav-icon").hide();
+      $(".dropdown-content").hide();
     }else{
       $("nav").removeClass("sticky");
     }
@@ -82,6 +85,26 @@ $(document).ready(function(){
       offset: '50%'
   });
 
-  
+  // Show menu for small devices
+  $(window).on("load resize",function(){
+    if ($(window).width() < 767) {
+        $(".mobile-nav-icon").show();
+        $(".main-nav").hide();
+        $(".dropdown-content").hide();
+    }else{
+        $(".mobile-nav-icon").hide();
+        $(".dropdown-content").hide();
+        $(".main-nav").show();
+    }
+  });
+
+  $(".mobile-nav-icon").click(function(){
+    // $(".dropdown-content").show();
+    if($(".dropdown-content").is(":visible")){
+      $(".dropdown-content").hide();
+    }else{
+      $(".dropdown-content").show();
+    }
+  });
 
 });

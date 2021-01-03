@@ -147,6 +147,7 @@ a:hover, a:visited{
   float: right;
   list-style: none;
   margin-top: 55px;
+  display: none;
 }
 
 .main-nav li{
@@ -154,7 +155,22 @@ a:hover, a:visited{
   margin-left: 40px;
 }
 
-.main-nav li a:link, .main-nav li a:visited{
+.dropdown-content{
+  float: right;
+  list-style: none;
+  margin-top: 10%;  
+  /*margin-left: 200px;  */
+  display: none;
+}
+
+.dropdown-content li{
+  display: block;
+  margin-left: 40px;
+  font-size: 150%;
+  margin-bottom: 10%;
+}
+
+.main-nav li a:link, .main-nav li a:visited, .dropdown-content li a:link, .dropdown-content li a:visited{
   padding: 8px 0;
   color: white;
   text-decoration: none;
@@ -165,7 +181,26 @@ a:hover, a:visited{
   transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover, .main-nav li a:active{ border-bottom: 2px solid #e67e22; }
+.main-nav li a:hover, .main-nav li a:active{ border-bottom: 2px solid #eb7610; }
+
+.dropdown-content li a:hover, .dropdown-content li a:active{
+  color: #eb7610;
+}
+
+/* --------------------------- */
+/* Mobile Navigation Bar */
+/* --------------------------- */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 300%;
+    color: #fff;
+}
 
 /* --------------------------- */
 /* Sticky Navigation Bar */
