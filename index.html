@@ -19,6 +19,7 @@
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Dine-In-Dash | Healthy Does Not Mean Boring</title>
   </head>
@@ -34,12 +35,12 @@
       <nav>
         <div class="row">
           <img src="resources/img/logo-white.png" alt="Dine-In-Dash Logo" class="logo">
-          <img src="resources/img/logo.png" alt="Dine-In-Dash Logo" class="logo-black">
+          <a href="#home"><img src="resources/img/logo.png" alt="Dine-In-Dash Logo" class="logo-black"></a>
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
           </ul>
           <br>
         </div>
@@ -48,19 +49,19 @@
       <!------------------
         Header
       ------------------->
-      <header>
+      <header id="home">
         <div class="hero-text-box">
           <h1 class="intro-header">Goodbye junk food.<br />Hello healthy meals.</h1>
-          <a href="#" class="btn btn-full">I’m hungry</a>
-          <a href="#" class="btn btn-ghost">Show me more</a>
+          <a href="#" class="btn btn-full js--scroll-to-plans">I’m hungry</a>
+          <a href="#" class="btn btn-ghost js--scroll-to-start">Show me more</a>
         </div>
       </header>
     </div>
 
     <!------------------
-      Features Meals
+      Features
     ------------------->
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">       
         <!-- Features Header -->
         <h1 class="features-header">Get food fast &mdash; not fast food.</h1>
@@ -168,7 +169,7 @@
     <!------------------
       How It Works
     ------------------->
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <!-- How It Works Header -->
       <div class="row">
         <h1 class="section-steps-header">How it works &mdash; Simple as 1, 2, 3</h1>
@@ -200,7 +201,7 @@
     <!------------------
       Cities
     ------------------->
-    <section class="setion-cities">
+    <section class="setion-cities" id="cities">
       <!-- Cities Header -->
       <div class="row">
           <h1 class="section-cities-header">We're currently in these cities</h1>
@@ -312,24 +313,24 @@
     <!------------------
       Signup and Plans 
     ------------------->
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <!-- Signup and Plans Header -->
       <div class="row">
-        <h1 class="plans-header">Start eating healthy today</h1>
+        <h2>Start eating healthy today</h2>
       </div>
       <!-- Signup and Plans Detail -->
       <div class="row">
         <!-- Premium -->
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
-              <h2>Premium</h2>
+              <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
-              <p class="plan-price-meal">That’s only $13.30 per meal</p>
+              <p class="plan-price-meal">That's only $13.30 per meal</p>
             </div>
             <div>
               <ul>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 meal everyday</li>
+                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 meal every day</li>
                 <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Order 24/7</li>
                 <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Access to newest creations</li>
                 <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Free delivery</li>
@@ -343,52 +344,52 @@
         <!-- Pro -->
         <div class="col span-1-of-3">
           <div class="plan-box">
-            <div>
-              <h2>Pro</h2>
-              <p class="plan-price">$149 <span>/ month</span></p>
-              <p class="plan-price-meal">That’s only $14.90 per meal</p>
-            </div>
-            <div>
-              <ul>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>10 meals/month</li>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Order 24/7</li>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Access to newest creations</li>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Free delivery</li>
-              </ul>
-            </div>
-            <div>
-              <a href="#" class="btn btn-light">Sign up now</a>
-            </div>
+              <div>
+                  <h3>Pro</h3>
+                  <p class="plan-price">$149 <span>/ month</span></p>
+                  <p class="plan-price-meal">That's only $14.90 per meal</p>
+              </div>
+              <div>
+                  <ul>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 meal 10 days/month</li>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Order 24/7</li>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon></i>Access to newest creations</li>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon></i>Free delivery</li>
+                  </ul>
+              </div>
+              <div>
+                  <a href="#" class="btn btn-light">Sign up now</a>
+              </div>
           </div>
         </div>
         <!-- Starter -->
         <div class="col span-1-of-3">
           <div class="plan-box">
-            <div>
-              <h2>Starter</h2>
-              <p class="plan-price">$19 <span>/ meal</span></p>
-              <p class="plan-price-meal">&nbsp;</p>
-            </div>
-            <div>
-              <ul>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 meal</li>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>8 am to 12 pm</li>
-                <li><ion-icon name="close-outline" class="icon-red"></ion-icon>Access to newest creations</li>
-                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Free delivery</li>
-              </ul>
-            </div>
-            <div>
-              <a href="#" class="btn btn-light">Sign up now</a>
-            </div>
+              <div>
+                  <h3>Starter</h3>
+                  <p class="plan-price">$19 <span>/ meal</span></p>
+                  <p class="plan-price-meal">&nbsp;</p>
+              </div>
+              <div>
+                  <ul>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 meal</li>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Order from 8 am to 12 pm</li>
+                      <li><ion-icon name="close-outline" class="icon-red"></ion-icon>Access to newest creations</li>
+                      <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon></i>Free delivery</li>
+                  </ul>
+              </div>
+              <div>
+                  <a href="#" class="btn btn-light">Sign up now</a>
+              </div>
           </div>
-        </div>
+          </div>
       </div>
-    </section>
+        </section>
 
     <!------------------
       Contact Form 
     ------------------->
-    <section class="section-form">
+    <section class="section-form" id="plans">
       <!-- Contact Form Header -->
       <div class="row">
         <h1 class="form-header">We're happy to hear from you</h1>
@@ -491,12 +492,12 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script src="/resources/js/script.js"></script>
-   <script src="/vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
   </body>
 </html>
