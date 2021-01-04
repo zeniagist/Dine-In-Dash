@@ -98,8 +98,6 @@ $(document).ready(function(){
     }
   });
 
-
-
   // function
   // Sticky Navigation
   function stickyNav(){

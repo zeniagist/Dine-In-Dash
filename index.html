@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
     <!-- Favicon-->
     <link rel="shortcut icon" href="/resources/img/favicon.ico">
+    
 
     <title>Dine-In-Dash | Healthy Does Not Mean Boring</title>
   </head>
@@ -405,76 +406,80 @@
     <!-----------------
       Contact Form 
     ------------------>
-    <section class="section-form" id="form">
-      <!-- Contact Form Header -->
-      <div class="row">
-        <h1 class="form-header">We're happy to hear from you</h1>
+    <div class="map-box">
+      <!-- Map -->
+      <div id="map" class="map"></div>
+      <div class="form-box section-form" id="form">
+        <!-- Contact Form Header -->
+        <div class="row">
+          <h1 class="form-header">We're happy to hear from you</h1>
+        </div>
+        <!-- Contact Form Detail -->
+        <div class="row">
+          <form action="#" method="post" class="contact-form" action="mailer.php">
+            <!-- Name -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+              </div>            
+            </div>
+            <!-- Email -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+            </div>
+            <!-- How did you find us -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                  <label for="findus">How did you find us?</label>
+              </div>
+              <div class="col span-2-of-3">
+                <select name="findus" id="findus">
+                  <option value="friends" selected>Friends</option>
+                  <option value="search">Search Engine</option>
+                  <option value="ad">Advertisement</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <!-- Newsletter -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="news">Newsletter</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="checkbox" name="news" id="news" checked> Yes please!
+              </div>
+            </div>
+            <!-- Drop us a line -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="message">Drop us a line</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <!-- Submit Button -->
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>&nbsp;</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="submit" value="Send it!">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <!-- Contact Form Detail -->
-      <div class="row">
-        <form action="#" method="post" class="contact-form">
-          <!-- Name -->
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="name">Name</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="text" name="name" id="name" placeholder="Your Name" required>
-            </div>            
-          </div>
-          <!-- Email -->
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="email">Email</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="email" name="email" id="email" placeholder="Email" required>
-            </div>
-          </div>
-          <!-- How did you find us -->
-          <div class="row">
-            <div class="col span-1-of-3">
-                <label for="findus">How did you find us?</label>
-            </div>
-            <div class="col span-2-of-3">
-              <select name="findus" id="findus">
-                <option value="friends" selected>Friends</option>
-                <option value="search">Search Engine</option>
-                <option value="ad">Advertisement</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </div>
-          <!-- Newsletter -->
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="news">Newsletter</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="checkbox" name="news" id="news" checked> Yes please!
-            </div>
-          </div>
-          <!-- Newsletter -->
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="message">Drop us a line</label>
-            </div>
-            <div class="col span-2-of-3">
-              <textarea name="message" id="message" placeholder="Your message"></textarea>
-            </div>
-          </div>
-          <!-- Submit Button -->
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="submit" value="Send it!">
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+    </div>
 
     <!-----------------
       Footer
@@ -508,12 +513,16 @@
       </div>
     </footer>
 
+    <!--Google Map API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFLMFaU5ZWKX-DheNPBrL1yE_ZVQmBvjo&libraries=places"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
+    <script src="resources/js/maps.js"></script>
+    
 
   </body>
 </html>
