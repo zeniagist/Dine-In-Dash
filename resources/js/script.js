@@ -3,11 +3,10 @@ $(document).ready(function(){
   // Show menu for small devices
   $(window).on("load resize scroll",function(){
     if ($(window).width() < 767) {
-        stickyNav();
         $(".mobile-nav-icon").show();
         $(".main-nav").hide();
         $(".dropdown-content").hide();
-        $(".logo-black").hide();        
+        $(".logo-black").hide();    
     }else{
         stickyNav();
         $(".mobile-nav-icon").hide();
@@ -116,4 +115,3 @@ $(document).ready(function(){
   }
 
 });
-
